@@ -1,4 +1,4 @@
-package jp.rync.nenga.base.model;
+package jp.rync.nenga.base.domain.models;
 
 /**
  * 識別子不在例外

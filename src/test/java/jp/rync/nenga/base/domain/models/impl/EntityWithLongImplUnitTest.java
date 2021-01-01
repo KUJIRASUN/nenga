@@ -1,8 +1,8 @@
-package jp.rync.nenga.base.model.impl;
+package jp.rync.nenga.base.domain.models.impl;
 
-import jp.rync.nenga.base.model.Entity;
-import jp.rync.nenga.base.model.EntityWithLongUnitTest;
-import jp.rync.nenga.base.model.Identifier;
+import jp.rync.nenga.base.domain.models.Entity;
+import jp.rync.nenga.base.domain.models.EntityWithLongUnitTest;
+import jp.rync.nenga.base.domain.models.Identifier;
 
 import java.util.Optional;
 

@@ -1,7 +1,7 @@
-package jp.rync.nenga.base.model.impl;
+package jp.rync.nenga.base.domain.models.impl;
 
-import jp.rync.nenga.base.model.Identifier;
-import jp.rync.nenga.base.model.IdentifierWithLongUnitTest;
+import jp.rync.nenga.base.domain.models.Identifier;
+import jp.rync.nenga.base.domain.models.IdentifierWithLongUnitTest;
 
 public class IdentifierWIthLongImplUnitTest implements IdentifierWithLongUnitTest<Identifier<Long>> {
     @Override

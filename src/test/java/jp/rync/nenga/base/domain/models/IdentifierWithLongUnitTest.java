@@ -1,4 +1,4 @@
-package jp.rync.nenga.base.model;
+package jp.rync.nenga.base.domain.models;
 
 import org.junit.jupiter.api.Test;
 
