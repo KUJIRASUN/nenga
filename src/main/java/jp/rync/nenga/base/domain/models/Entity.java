@@ -10,14 +10,14 @@ public class Entity<ID extends Identifier<?>> {
     /**
      * 識別子（Optional）
      */
-    private Optional<ID> idOptional;
+    private final ID id;
 
     /**
      * コンストラクタ
-     * @param idOptional 識別子（Optional）
+     * @param id 識別子（Optional）
      */
-    public Entity(Optional<ID> idOptional) {
-        this.idOptional = idOptional;
+    public Entity(ID id) {
+        this.id = id;
     }
 
     /**
@@ -26,8 +26,9 @@ public class Entity<ID extends Identifier<?>> {
      * @throws IdNotFoundException 識別子不在例外
      */
     public ID getId() throws IdNotFoundException {
-        if(this.idOptional.isPresent()) {
-            return this.idOptional.get();
+        Optional<ID> idOptional = Optional.ofNullable(this.id);
+        if(idOptional.isPresent()) {
+            return idOptional.get();
         } else {
             throw new IdNotFoundException("ID not found.");
         }

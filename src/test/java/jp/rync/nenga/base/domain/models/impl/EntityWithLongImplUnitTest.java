@@ -9,11 +9,11 @@ import java.util.Optional;
 public class EntityWithLongImplUnitTest implements EntityWithLongUnitTest<Identifier<Long>, Entity<Identifier<Long>>> {
     @Override
     public Entity<Identifier<Long>> generateTestInstance() {
-        return new Entity<Identifier<Long>>(Optional.of(new Identifier<Long>(1L)));
+        return new Entity<Identifier<Long>>(new Identifier<Long>(1L));
     }
 
     @Override
     public Entity<Identifier<Long>> generateTestInstanceForIdNotFound() {
-        return new Entity<Identifier<Long>>(Optional.empty());
+        return new Entity<Identifier<Long>>(null);
     }
 }
