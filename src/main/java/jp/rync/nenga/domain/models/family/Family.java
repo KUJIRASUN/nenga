@@ -7,17 +7,35 @@ import jp.rync.nenga.domain.models.master.Prefecture;
  * ファミリ
  */
 public class Family extends Entity<FamilyId> {
-    // 郵便番号
+
+    /**
+     * 郵便番号
+     */
     private final String postalCode;
-    // 都道府県
+
+    /**
+     * 都道府県
+     */
     private final Prefecture prefecture;
-    // 市区町村
+
+    /**
+     * 市区町村
+     */
     private final String city;
-    // その他 住所情報
+
+    /**
+     * その他 住所情報
+     */
     private final String address;
-    // 建物名
+
+    /**
+     * 建物名
+     */
     private final String building;
-    // 苗字
+
+    /**
+     * 苗字
+     */
     private final String familyName;
 
     /**
@@ -30,13 +48,13 @@ public class Family extends Entity<FamilyId> {
      * @param familyName 苗字
      */
     public Family(
-            final FamilyId id,
-            final String postalCode,
-            final Prefecture prefecture,
-            final String city,
-            final String address,
-            final String building,
-            final String familyName
+            FamilyId id,
+            String postalCode,
+            Prefecture prefecture,
+            String city,
+            String address,
+            String building,
+            String familyName
     ) {
         super(id);
         this.postalCode = postalCode;

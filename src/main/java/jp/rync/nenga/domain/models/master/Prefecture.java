@@ -8,19 +8,19 @@ public class Prefecture {
     /**
      * 都道府県コード
      */
-    private PrefectureCode code;
+    private final PrefectureCode code;
 
     /**
      * 都道府県名
      */
-    private String name;
+    private final String name;
 
     /**
      * コンストラクタ
      * @param code 都道府県コード
      * @param name 都道府県名
      */
-    public Prefecture(final PrefectureCode code, final String name) {
+    public Prefecture(PrefectureCode code, String name) {
         this.code = code;
         this.name = name;
     }
